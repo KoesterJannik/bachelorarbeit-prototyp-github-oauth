@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github Auth Example</title>
+  </head>
+  <body>
+    <% if (!user) { %>
+    <a href="/auth/github">Login with GitHub</a>
+    <% } else { %>
+    <p>Welcome, <%= user.username %>!</p>
+    <a href="/logout">Logout</a>
+    <% } %>
+  </body>
+</html>
